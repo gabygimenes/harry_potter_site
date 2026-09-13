@@ -4,22 +4,44 @@
     box-sizing: border-box;
 }
 
-body{
+ {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
     font-family: sans-serif;
-    background-color: rgb(239, 251, 255);
-
+    background-color: rgb(240, 238, 230);
 }
 
-header{
-
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: rgb(35, 35, 45);
 }
-strong{
-    color: rgb(138, 16, 16);
-    font-size: small;
-}
 
-h2{
+header h2 {
     font-family: 'Times New Roman', Times, serif;
+    color: rgb(218, 181, 92);
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+}
+
+nav h3 {
+    color: white;
+    font-size: 15px;
+}
+
+strong {
+    color: rgb(218, 181, 92);
+    font-size: small;
 }
 
 #introducao {
@@ -27,33 +49,67 @@ h2{
     flex-direction: row;
     gap: 30px;
     padding: 30px;
-    background-color: ;
+    background-color: rgb(116, 27, 45);
     align-items: center;
     justify-content: space-between;
 }
 
+#introducao article {
+    color: white;
+}
+
+#introducao h1 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 40px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
 #introducao img {
     width: 350px;
-    height: 350px;
+    height: 250px;
+    object-fit: contain;
+}
+
+#cards {
+    padding: 30px;
+    background-color: rgb(240, 238, 230);
+}
+
+#cards h2 {
+    font-family: 'Times New Roman', Times, serif;
     margin-bottom: 20px;
 }
 
-#card {
+.lista {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.card {
     background-color: white;
-    padding: 20px;
-    width: 30%;
-    border-radius: 20px;
-    text-align: center;
+    width: 32%;
+    padding-bottom: 15px;
 }
 
 .card img {
     width: 100%;
-    border-radius: 20px;
-    height: 300px;
-    object-fit: cover;
+    height: 220px;
+    object-fit: contain;
+    background-color: rgb(230, 230, 230);
+}
+
+.card h3 {
+    margin: 10px;
 }
 
 .card p {
-    margin-top: 10px;
-    font-weight: bold;
+    margin: 10px;
+}
+
+footer {
+    padding: 20px;
+    background-color: rgb(35, 35, 45);
+    color: white;
 }
